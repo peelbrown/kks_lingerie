@@ -1,1 +1,0 @@
-document.addEventListener("touchmove",function(e){1!==e.scale&&e.preventDefault()},{passive:!1}),document.querySelector(".burger").addEventListener("click",function(){let e=this.classList.toggle("burger--active");document.querySelector(".nav__items").style.display=e?"block":"none"});
