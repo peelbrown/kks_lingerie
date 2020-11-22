@@ -1,0 +1,148 @@
+.header {
+	// border-top: 1px solid transparent;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../../images/header_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #CBB9B1;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100vh;
+	}
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+
+	&__item {
+		display: inline-block;
+		font-size: 18px;
+		margin-left: 50px;
+	}
+}
+
+.represent {
+	&__title {
+		font-family: $title_font;
+		font-size: 122px;
+		letter-spacing: 5px;
+		// word-break: break-all;
+	}
+	&__description {
+		font-size: 32px;
+		max-width: 518px;
+		margin-top: 40px;
+	}
+
+	.check-new {
+		display: inline-block;
+		margin-top: 40px;
+		position: relative;
+
+		&::before {
+			content: "";
+			width: 118%;
+			height: 1px;
+			background-color: #CBB9B1;
+			position: absolute;
+			left: 0;
+			bottom: -15px;
+		}
+		&::after {
+			content: "";
+			width: 20px;
+			height: 10px;
+			position: absolute;
+			right: -30px;
+			bottom: 0;
+			background-image: url(../../images/arrow-right.png);
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.header__nav--bottom {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	// align-items: flex-end;
+}
+
+.scroll-down {
+	display: block;
+	width: 45px;
+	height: 20px;
+	background-image: url(../../images/arrow-down.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.instagram {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../../images/instagram.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+// ___ burger ___ //  
+.burger {
+	display: none;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    // background-color: #fff;
+    cursor: pointer;
+    
+    border-radius: 50%;
+    transition: .5s;
+}
+
+
+.burger span,
+.burger span::before,
+.burger span::after  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -31px;
+    width: 61px;
+    height: 1px;
+    background-color: #E1CFC6;
+    border-radius: 30px;
+}
+
+.burger span::before,
+.burger span::after {
+    content: "";
+    transition: 0.5s;
+}
+
+.burger span::before {
+    transform: translateY(-11px);
+}
+
+.burger span::after {
+    transform: translateY(11px);
+}
+
+.burger--active span{
+    height: 0;
+}
+
+.burger--active span::before {
+    transform: rotate(-45deg);
+}
+
+.burger--active span::after {
+    transform: rotate(45deg);
+}

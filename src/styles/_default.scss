@@ -1,0 +1,38 @@
+$title-font: "Playfair Display", serif;
+$text-font: "Roboto", sans-serif;
+
+$dark-color: #25282C;
+$light-color: #DDDDDD;
+
+html, body {
+	font-family: $text-font;
+	color: $dark-color;
+}
+
+.wrapper {
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+// .section__header {
+// 	font-family: $head-font;
+// 	font-size: 36px;
+// 	text-transform: uppercase;
+// 	font-weight: 300;
+// 	text-align: center;
+// 	margin: 80px 0;
+// }
+
+// .btn {
+// 	display: block;
+// 	font-family: $title-font;
+// 	width: 250px;
+// 	height: 60px;
+// 	border-radius: 30px;
+// 	text-align: center;
+// 	line-height: 60px;
+// 	text-transform: uppercase;
+// 	background-color: $dark-color;
+// 	color: $light-color;
+// }
