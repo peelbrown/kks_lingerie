@@ -1,38 +1,23 @@
 $title-font: "Playfair Display", serif;
 $text-font: "Roboto", sans-serif;
 
-$dark-color: #25282C;
-$light-color: #DDDDDD;
+$menu-color: #CBB9B1;
+$light-color: #E1CFC6;
+$dark-color: #000000; 
+$sign-color: #5A3B32;
 
 html, body {
 	font-family: $text-font;
-	color: $dark-color;
+	color: $light-color;
 }
 
 .wrapper {
+	// Content 1280px
 	max-width: 1310px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
-// .section__header {
-// 	font-family: $head-font;
-// 	font-size: 36px;
-// 	text-transform: uppercase;
-// 	font-weight: 300;
-// 	text-align: center;
-// 	margin: 80px 0;
-// }
-
-// .btn {
-// 	display: block;
-// 	font-family: $title-font;
-// 	width: 250px;
-// 	height: 60px;
-// 	border-radius: 30px;
-// 	text-align: center;
-// 	line-height: 60px;
-// 	text-transform: uppercase;
-// 	background-color: $dark-color;
-// 	color: $light-color;
-// }
+@mixin b {
+	border: 1px solid red;
+}
